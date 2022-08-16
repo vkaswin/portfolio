@@ -1,10 +1,15 @@
-import React, { StrictMode } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
+import { Router } from "./router";
+import { SideBar } from "components";
+
+import "assets/scss/abstracts.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <StrictMode>
-    <div>Hello World</div>
-  </StrictMode>
+  <div className="wrapper">
+    <Router />
+    <SideBar />
+  </div>
 );
